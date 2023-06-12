@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "server": "npm start --prefix ./server --ignore client",
+    "client": "npm start --prefix ./client",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.1.0"
+  }
+}
